@@ -3,17 +3,38 @@ function init(){
     
     const gridElm = document.querySelector('.grid')
     // const Random = Math.Random(100)
+    const cells = []
+    // let score =0 ;
+    // let num =0;
+    const gridWidth = 10
+    const numberOfCells = gridWidth * gridWidth
 
     function createGrid(){
         ///for every cell create a div
         //append the cell to our grid
         //doing this instead of writing 100 divs on the html which take more space
-        for(let i =0; i<100; i++){
+        for(let i =0; i<numberOfCells; i++){
             const cell = document.createElement('div')
             gridElm.appendChild(cell)
+            //means give the div a class named duck
+            cell.classList.add("duck")
             cell.textContent = i
+            cells.push(cell)
+            
         }
+
+        console.log(cells)
     }
+ 
+
+    // function points(){
+    //     num = event.target.innerText
+    //     console.log(num)
+    // }
+    // cells.addEventListener('click', (event)=>{
+    //      num = event.target.innerText
+    //      console.log(num)
+    // })
 
     createGrid()
 }

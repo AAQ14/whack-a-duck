@@ -1,12 +1,20 @@
-.grid{
-    width: 600px;
-    height: 600px;
-    border: 1px solid black;
-    display: flex;
-    flex-wrap: wrap;
+.grid {
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
 }
-.grid div{
-    width: 58px;
-    height: 58px;
-    border: 1px solid black;
+.grid div {
+  width: 58px;
+  height: 58px;
+  border: 1px solid black;
+}
+
+.duck {
+    background-image: url("../assets/duck.jpg");
+    /*resize the background to be contained in the div*/
+    background-size: contain;
+    /*this property will allow the image be repeated in the div*/
+    background-repeat: no-repeat;
 }
